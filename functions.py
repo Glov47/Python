@@ -26,10 +26,10 @@ def merge(list1, list2):
     g.sort()
     return g
 # считываем данные
-numbers1 = [int(c) for c in input().split()]
-numbers2 = [int(c) for c in input().split()]
+list1 = [int(c) for c in input().split()]
+list2 = [int(c) for c in input().split()]
 # вызываем функцию
-print(merge(numbers1, numbers2))
+print(merge(list1, list2))
 # ------------------------------------------------------------------
 
 # Напишите функцию print_fio(name, surname, patronymic), которая принимает три параметра:
