@@ -19,10 +19,13 @@ while flag == True:
     print(choice(answers))
     sleep(2)
     print('Хотите задать еще один вопрос? Напишите "Да" или "Нет":')
-    ans = input()
-    if ans.lower() == 'да':
-        continue;
-    elif ans.lower() == 'нет':
-        flag = False
-        break;
+    ans = ''
+    while ans.lower() != 'да' and ans.lower() != 'нет':
+        ans = input()
+        if ans.lower() == 'да':
+            break;
+        elif ans.lower() == 'нет':
+            flag = False
+        else:
+            print('Я вас не понял, напишите "Да" или "Нет":')
 print('Возвращайтесь, если возникнут вопросы!')
